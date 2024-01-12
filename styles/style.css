@@ -18,6 +18,7 @@ border: none;
 .btn-primary:hover{
     color:#FF900E ;
     background-color: #FFF;
+    cursor: pointer;
 }
 
 header{
@@ -55,9 +56,37 @@ font-size: 64px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+
+}
+.banner-description, .btn-primary{
+    margin-top: 15px;
 }
 .banner-content{
     max-width: 810px;
     text-align: center;
    margin: 0 auto;
+  margin-top: 50px;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* respnsive section */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (min-width:576px) and  (max-width:992px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
